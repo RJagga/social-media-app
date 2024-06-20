@@ -1,0 +1,40 @@
+/* @import '~mdb-ui-kit/css/mdb.min.css' ; */
+/* #root {
+  widhth:100%;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+/* } */
+
+
+.main-content-app{
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  gap: 15px; 
+  padding: 15px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.main-c-left{
+  margin-top: 0;
+  height: fit-content;
+  overflow: scroll;
+  width: 90px;
+
+}
+.main-c-left.isFullclass{
+  width: 300px !important;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.main-c-right{
+  margin-top: 0;
+  height: fit-content;
+  overflow: scroll;
+  width: calc(100% - 90px);
+  flex-grow: 1;
+  flex-shrink: 1;
+}

@@ -1,0 +1,16 @@
+.chat-body{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-content: start;
+}
+
+.chats{
+    height: 100%;
+}
+.message{
+    display: none;
+}
+
+.message.page{
+    display: block;
+}
