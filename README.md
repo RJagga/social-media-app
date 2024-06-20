@@ -6,12 +6,12 @@ Welcome to the Social Media App! This is a platform where users can follow each 
 * Installation
 
 ## Features
-*User Authentication: Sign up, log in, and log out functionality.
-*Post Creation: Users can create, edit, and delete posts.
-*Likes & Comments: Users can like and comment on posts.
-*Following: Users can follow and unfollow other users. 
-*Search: Users can search for other users. 
-*Chat: Chat with users they follow
+* User Authentication: Sign up, log in, and log out functionality.
+* Post Creation: Users can create, edit, and delete posts.
+* Likes & Comments: Users can like and comment on posts.
+* Following: Users can follow and unfollow other users. 
+* Search: Users can search for other users. 
+* Chat: Chat with users they follow
 
 ## Installation
 
