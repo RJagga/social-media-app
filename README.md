@@ -16,7 +16,7 @@ Welcome to the Social Media App! This is a platform where users can follow each 
 ## Installation
 
 ### Client
-Cloning: `git clone https://github.com/yourusername/social-media-app.git` <br/>
+Cloning: `git clone https://github.com/RJagga/social-media-app.git` <br/>
 Install all the dependencies after cloning the repo: `npm i` <br/>
 Run:
 * client: `npm run dev`
