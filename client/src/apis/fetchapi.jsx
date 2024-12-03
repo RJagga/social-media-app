@@ -3,7 +3,7 @@
 const authUser = async (user) => {
 
     console.log("authenticating user" , user);
-    const response = await fetch(`http://localhost:8000/auth/auth`, {
+    const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/auth/auth`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -35,7 +35,7 @@ const authUser = async (user) => {
     console.log("logout");
     try {
       const response = await fetch(
-        `http://localhost:8000/auth/logout`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/auth/logout`,
         {
           method: "GET",
           headers: {
@@ -63,7 +63,7 @@ const authUser = async (user) => {
     console.log(images);
     try {
       const response = await fetch(
-        `http://localhost:8000/post/addnewpost`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/addnewpost`,
         {
           method: "POST",
           headers: {
@@ -89,7 +89,7 @@ const authUser = async (user) => {
   const handleDeletePost = async (postId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/post/deletepost/${postId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/deletepost/${postId}`,
         {
           method: "DELETE",
           headers: {
@@ -113,7 +113,7 @@ const authUser = async (user) => {
   const handleLikePost = async (postId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/post/likepost/${postId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/likepost/${postId}`,
         {
           method: "PATCH",
           headers: {
@@ -137,7 +137,7 @@ const authUser = async (user) => {
   const handleDislikePost = async (postId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/post/dislikepost/${postId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/dislikepost/${postId}`,
         {
           method: "PATCH",
           headers: {
@@ -161,7 +161,7 @@ const authUser = async (user) => {
   const handleCommentPost = async (postId, comment) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/post/commentpost/${postId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/commentpost/${postId}`,
         {
           method: "PATCH",
           headers: {
@@ -186,7 +186,7 @@ const authUser = async (user) => {
   const handleDeleteComment = async (postId, commentId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/post/deletecomment/${postId}/${commentId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/post/deletecomment/${postId}/${commentId}`,
         {
           method: "DELETE",
           headers: {
@@ -211,7 +211,7 @@ const authUser = async (user) => {
     console.log(followId);
     try {
       const res = await fetch(
-        `http://localhost:8000/user/follow/${followId}`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/user/follow/${followId}`,
         {
           method: "POST",
           headers: {
@@ -233,7 +233,7 @@ const authUser = async (user) => {
   
     try {
   
-      const res = await fetch(`http://localhost:8000/user/unfollow/${userId}`, {
+      const res = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/user/unfollow/${userId}`, {
   
         method: "POST",
         headers: {
@@ -257,7 +257,7 @@ const authUser = async (user) => {
     console.log(images);
     try {
       const response = await fetch(
-        `http://localhost:8000/account/addcoverimg`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/account/addcoverimg`,
         {
           method: "POST",
           headers: {
@@ -281,7 +281,7 @@ const authUser = async (user) => {
     console.log(images , 'this');
     try {
       const response = await fetch(
-        `http://localhost:8000/account/addprofileimg`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_ADDR/account/addprofileimg`,
         {
           method: "POST",
           headers: {
